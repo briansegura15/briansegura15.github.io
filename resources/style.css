@@ -1,4 +1,10 @@
 /* Element Styles */
+h1,
+h2,
+h4 {
+  padding: 0;
+  margin: 0;
+}
 
 * {
   font-family: Helvetica;
@@ -7,6 +13,7 @@
   background-color: black;
   /* opacity: 0.9; */
   text-align: center;
+  box-sizing: border-box;
 }
 
 ul {
@@ -60,11 +67,17 @@ h2 {
   height: 700px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .text-box1 {
   align-self: center;
   width: 100%;
+  padding: 10px 0;
+}
+
+.text-box1 > h4 {
+  margin-top: 20px;
 }
 
 /* tea of the month area */
@@ -91,6 +104,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .text-box2 {
@@ -98,6 +112,15 @@ span {
   display: flex;
   flex-direction: column;
   flex-basis: 1000px;
+}
+
+.text-box2 > h4 {
+  margin: 20px 20px;
+}
+
+.pic > span {
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
 /* location area */
@@ -119,12 +142,31 @@ span {
 
 .text-box3 {
   flex-basis: 300px;
-  margin: 0 -60px;
+  height: 300px;
 }
 
+.text-box3 > p {
+  line-height: 40px;
+}
+
+.text-box3.first {
+  margin-left: 60px;
+}
+
+.text-box3.third {
+  margin-right: 60px;
+}
 /* footer area */
 
 .footer {
   text-align: left;
   margin-left: 20px;
+}
+
+footer > h2 {
+  padding-top: 10px;
+}
+
+footer {
+  height: 200px;
 }
