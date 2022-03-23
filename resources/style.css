@@ -43,6 +43,7 @@ h2 {
 }
 
 #logo {
+  margin-top: 10px;
   max-height: 50px;
   margin-left: 10px;
   align-self: center;
